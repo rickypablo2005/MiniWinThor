@@ -50,3 +50,18 @@ mvn clean compile
 
 ## Configuração do MySQL
 O projeto usa JDBC e espera uma conexão com o banco de dados miniwinthor. Ajuste as credenciais em src/main/java/br/com/miniwinthor/database/Conexao.java conforme o ambiente local.
+
+## Banco de Dados
+
+O projeto utiliza MySQL via JDBC.
+
+Para criar a estrutura inicial do banco, execute o script:
+
+```sql
+database/schema.sql
+```
+
+Esse script criará:
+
+- Banco de dados `miniwinthor`;
+- Tabela `produtos`.
