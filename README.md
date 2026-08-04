@@ -53,15 +53,13 @@ O projeto usa JDBC e espera uma conexão com o banco de dados miniwinthor. Ajust
 
 ## Banco de Dados
 
-O projeto utiliza MySQL via JDBC.
+O MiniWinThor foi estruturado para utilizar **MySQL** com **JDBC**.
 
-Para criar a estrutura inicial do banco, execute o script:
+Os scripts SQL estão disponíveis na pasta `database/`.
 
-```sql
-database/schema.sql
-```
+### Arquivos
 
-Esse script criará:
+- `schema.sql` — cria o banco de dados e a tabela `produtos`.
+- `sample-data.sql` — adiciona produtos de exemplo para testes.
 
-- Banco de dados `miniwinthor`;
-- Tabela `produtos`.
+> **Observação:** atualmente o projeto foi estruturado para fins de estudo e documentação. A conexão com um servidor MySQL não é obrigatória para compilar o projeto.
