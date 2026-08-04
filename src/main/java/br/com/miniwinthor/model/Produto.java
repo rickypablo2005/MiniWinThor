@@ -2,13 +2,41 @@ package br.com.miniwinthor.model;
 
 import java.util.Objects;
 
-public class Produto {
+/**
+ * Representa um produto cadastrado no sistema MiniWinThor.
+ *
+ * Esta classe contém os dados de um produto utilizado pelo sistema
+ * de cadastro e gerenciamento de produtos.
+ *
+ * @author Rickelmy Pablo Silva dos Santos
+ * @since 1.0
+ */
+    public class Produto {
 
-    private int codigo;
-    private String descricao;
-    private double precoDeCompra;
-    private double precoDeVenda;
-    private String status;
+    /**
+ * Código identificador do produto.
+ */
+  private int codigo;
+
+/**
+ * Descrição do produto.
+ */
+  private String descricao;
+
+/**
+ * Preço de compra.
+ */
+  private double precoDeCompra;
+
+/**
+ * Preço de venda.
+ */
+  private double precoDeVenda;
+
+/**
+ * Situação do produto.
+ */
+  private String status;
 
     public Produto() {
     }
@@ -21,21 +49,41 @@ public class Produto {
         this.status = status;
     }
 
+   /**
+ * Retorna o código do produto.
+ *
+ * @return código do produto
+ */
     public int getCodigo() {
-        return codigo;
-    }
+    return codigo;
+}
 
+    /**
+ * Define o código do produto.
+ *
+ * @param codigo código identificador
+ */
     public void setCodigo(int codigo) {
-        this.codigo = codigo;
-    }
+    this.codigo = codigo;
+}
 
-    public String getDescricao() {
-        return descricao;
-    }
+   /**
+ * Retorna a descrição do produto.
+ *
+ * @return descrição do produto
+ */
+public String getDescricao() {
+    return descricao;
+}
 
-    public void setDescricao(String descricao) {
-        this.descricao = descricao;
-    }
+   /**
+ * Define a descrição do produto.
+ *
+ * @param descricao descrição do produto
+ */
+public void setDescricao(String descricao) {
+    this.descricao = descricao;
+}
 
     public double getPrecoDeCompra() {
         return precoDeCompra;
